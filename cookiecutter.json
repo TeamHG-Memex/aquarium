@@ -1,0 +1,9 @@
+{
+    "deploy_name": "aquarium",
+    "num_splashes": 2,
+    "splash_version": "1.7",
+    "max_timeout": 3600,
+    "maxrss_mb": 4096,
+    "stats_enabled": "true",
+    "stats_auth": "admin:adminpass"
+}
