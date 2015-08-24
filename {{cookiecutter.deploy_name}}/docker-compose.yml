@@ -28,6 +28,7 @@
         - 8050
     mem_limit: {{ mem_limit }}
     memswap_limit: {{ memswap_limit }}
+    restart: always
 
 {%- for i in range(1, num_splashes) %}
 {{ prefix }}-splash{{i}}:
