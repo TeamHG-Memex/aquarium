@@ -26,9 +26,7 @@
 {%- for i in range(num_splashes) %}
 
 {{ prefix }}-splash{{i}}:
-    # FIXME: we need qt5-based image
     image: scrapinghub/splash:{{ cookiecutter.splash_version }}
-#    image: 25140fa12b7e
     command: --max-timeout {{ max_timeout }} \
              --disable-proxy \
              --slots 10 \

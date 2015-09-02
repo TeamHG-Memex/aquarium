@@ -1,10 +1,10 @@
 {
     "deploy_name": "aquarium",
-    "num_splashes": 2,
-    "splash_version": "1.7",
+    "num_splashes": 3,
+    "splash_version": "tmp-qt5",
     "splash_verbosity": 1,
     "max_timeout": 3600,
-    "maxrss_mb": 4096,
+    "maxrss_mb": 3000,
     "stats_enabled": 1,
     "stats_auth": "admin:adminpass",
     "tor": 1
