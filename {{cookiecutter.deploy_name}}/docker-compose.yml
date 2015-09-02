@@ -5,7 +5,6 @@
 {% set mem_limit = "%dm" | format(maxrss * 1.2) %}
 {% set memswap_limit = "%dm" | format(maxrss * 1.5) %}
 {% set tor = cookiecutter.tor | int %}
-{% set tor_setup = "--proxy-profiles-path" %}
 {% set verbosity = cookiecutter.splash_verbosity %}
 
 {{ prefix }}-haproxy:
@@ -27,11 +26,7 @@
 
 {{ prefix }}-splash{{i}}:
     image: scrapinghub/splash:{{ cookiecutter.splash_version }}
-    command: --max-timeout {{ max_timeout }} \
-             --disable-proxy \
-             --slots 10 \
-             --maxrss {{ maxrss }} \
-              -verbosity {{ verbosity }}
+    command: --max-timeout {{ max_timeout }} --disable-proxy --slots 10 --maxrss {{ maxrss }} --verbosity {{ verbosity }}
     expose:
         - 8050
     mem_limit: {{ mem_limit }}
