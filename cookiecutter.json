@@ -7,5 +7,9 @@
     "maxrss_mb": 3000,
     "stats_enabled": 1,
     "stats_auth": "admin:adminpass",
-    "tor": 1
+    "tor": 1,
+
+    "_copy_without_render": [
+        "*filters/*.txt"
+    ]
 }
