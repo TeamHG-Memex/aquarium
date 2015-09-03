@@ -1,4 +1,3 @@
-{% set prefix = cookiecutter.deploy_name %}
 {% set num_splashes = cookiecutter.num_splashes|int %}
 {% set max_timeout = cookiecutter.max_timeout|int %}
 {% set maxrss = cookiecutter.maxrss_mb | int %}
@@ -7,7 +6,7 @@
 {% set tor = cookiecutter.tor | int %}
 {% set verbosity = cookiecutter.splash_verbosity %}
 
-{{ prefix }}-haproxy:
+haproxy:
     image: haproxy:1.5
     ports:
         # stats
@@ -17,14 +16,14 @@
         - "8050:8050"
     links:
         {%- for i in range(num_splashes) %}
-        - {{ prefix }}-splash{{i}}
+        - splash{{i}}
         {%- endfor %}
     volumes:
         - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
 
 {%- for i in range(num_splashes) %}
 
-{{ prefix }}-splash{{i}}:
+splash{{i}}:
     image: scrapinghub/splash:{{ cookiecutter.splash_version }}
     command: --max-timeout {{ max_timeout }} --disable-proxy --slots 10 --maxrss {{ maxrss }} --verbosity {{ verbosity }}
     expose:
@@ -38,6 +37,7 @@
         - tor
     volumes:
         - ./proxy-profiles:/etc/splash/proxy-profiles:ro
+        - ./filters:/etc/splash/filters:ro
     {%- endif %}
 
 {%- endfor %}

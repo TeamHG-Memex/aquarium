@@ -1,5 +1,5 @@
 {
-    "deploy_name": "aquarium",
+    "folder_name": "aquarium",
     "num_splashes": 3,
     "splash_version": "tmp-qt5",
     "splash_verbosity": 1,

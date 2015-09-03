@@ -40,7 +40,7 @@ Options
 
 When generating a config, cookiecutter will ask a bunch of questions.
 
-* ``deploy_name (default is "aquarium")`` - configuration name.
+* ``folder_name (default is "aquarium")`` - a name of the target folder.
 * ``num_splashes (default is "2")`` - a number of Splash instances to create.
   To utilize full server capacity it makes sense to create slightly more Splash
   instances than CPU cores - e.g. on 2-core machine 3 instances often
@@ -63,10 +63,6 @@ When generating a config, cookiecutter will ask a bunch of questions.
 
 .. _Tor: http://torproject.org
 .. _Splash proxy profile: http://splash.readthedocs.org/en/latest/api.html#proxy-profiles
-
-.. warning::
-
-    Tor support is not working yet; it needs some fixes from Splash side.
 
 Contributing
 ------------
