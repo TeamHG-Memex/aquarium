@@ -60,9 +60,22 @@ When generating a config, cookiecutter will ask a bunch of questions.
   is enabled, all .onion links are opened using Tor. In addition to
   that, there is ``tor`` `Splash proxy profile`_ which you can use to render
   any page using Tor.
+* ``adblock (default is "1")`` - enter 0 to disable AdBlock Plus
+  `request filters`_. By default, the following filters are available:
+
+  * `easylist`: default set of EasyList_ filters for English;
+  * `easyprivacy`: EasyPrivacy filters remove tracking scripts;
+  * `easylist_noadult`: EasyList variant without filters for adult domains;
+  * `fanboy-social`: removes social media content such as the Facebook like
+    buttons and other widgets.
+  * `fanboy-annoyance`: blocks Social Media content, in-page pop-ups
+    and other annoyances; use it to decrease loading times and uncluttering
+    pages. `fanboy-social` is already included in this filter.
 
 .. _Tor: http://torproject.org
 .. _Splash proxy profile: http://splash.readthedocs.org/en/latest/api.html#proxy-profiles
+.. _request filters: http://splash.readthedocs.org/en/latest/api.html#request-filters
+.. _EasyList: https://easylist.adblockplus.org/en/
 
 Contributing
 ------------

@@ -9,7 +9,7 @@ FILTERS = {
     "easyprivacy": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
     # "easyprivacy_nointernational": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt",
     "easylist_noadult": "https://easylist-downloads.adblockplus.org/easylist_noadult.txt",
-    "antiadblockfilters": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
+    # "antiadblockfilters": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
     "fanboy-annoyance": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt",
     "fanboy-social": "https://easylist-downloads.adblockplus.org/fanboy-social.txt",
     # "easylistgermany": "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
