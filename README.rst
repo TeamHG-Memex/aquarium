@@ -49,7 +49,7 @@ When generating a config, cookiecutter will ask a bunch of questions.
   image.
 * ``splash_verbosity (default is "1")`` - Splash log verbosity, from 0 to 5.
 * ``max_timeout (default is "3600")`` - maximum allowed timeout.
-* ``maxrss_mb (default is "4096")`` - a soft memory limit, in MB. Splash
+* ``maxrss_mb (default is "3000")`` - a soft memory limit, in MB. Splash
   container will be restarted after some time if it starts to use more memory
   then this value.
 * ``stats_enabled (default is "1")`` - whether to enable HAProxy stats.
@@ -60,8 +60,9 @@ When generating a config, cookiecutter will ask a bunch of questions.
   is enabled, all .onion links are opened using Tor. In addition to
   that, there is ``tor`` `Splash proxy profile`_ which you can use to render
   any page using Tor.
-* ``adblock (default is "1")`` - enter 0 to disable AdBlock Plus
-  `request filters`_. By default, the following filters are available:
+* ``adblock (default is "1")`` - FIXME: this option is not working yet.
+   Enter 0 to disable AdBlock Plus `request filters`_. By default,
+   the following filters are available:
 
   * `easylist`: default set of EasyList_ filters for English;
   * `easyprivacy`: EasyPrivacy filters remove tracking scripts;
