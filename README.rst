@@ -1,8 +1,9 @@
 Aquarium
 ========
 
-Aquarium is a cookiecuter_ template for production-ready
-`Docker Compose`_ + Splash_ setup.
+Aquarium is a cookiecuter_ template for hassle-free
+`Docker Compose`_ + Splash_ setup. Think of it as a Splash instance
+with extra features and without common pitfalls.
 
 .. _cookiecuter: http://cookiecutter.rtfd.org
 .. _Splash: https://github.com/scrapinghub/splash
@@ -41,12 +42,12 @@ Options
 When generating a config, cookiecutter will ask a bunch of questions.
 
 * ``folder_name (default is "aquarium")`` - a name of the target folder.
-* ``num_splashes (default is "2")`` - a number of Splash instances to create.
+* ``num_splashes (default is "3")`` - a number of Splash instances to create.
   To utilize full server capacity it makes sense to create slightly more Splash
   instances than CPU cores - e.g. on 2-core machine 3 instances often
   work best.
-* ``splash_version (default is "1.7")`` - a version of scrapighub/splash Docker
-  image.
+* ``splash_version (default is "tmp-qt5")`` - a version of scrapighub/splash
+  Docker image.
 * ``splash_verbosity (default is "1")`` - Splash log verbosity, from 0 to 5.
 * ``max_timeout (default is "3600")`` - maximum allowed timeout.
 * ``maxrss_mb (default is "3000")`` - a soft memory limit, in MB. Splash
