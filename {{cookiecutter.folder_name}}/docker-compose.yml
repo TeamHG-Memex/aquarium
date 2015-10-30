@@ -7,7 +7,7 @@
 {% set verbosity = cookiecutter.splash_verbosity %}
 
 haproxy:
-    image: haproxy:1.5
+    image: haproxy:1.6
     ports:
         # stats
         - "8036:8036"
