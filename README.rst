@@ -46,7 +46,7 @@ When generating a config, cookiecutter will ask a bunch of questions.
   To utilize full server capacity it makes sense to create slightly more Splash
   instances than CPU cores - e.g. on 2-core machine 3 instances often
   work best.
-* ``splash_version (default is "tmp-qt5")`` - a version of scrapighub/splash
+* ``splash_version (default is "master")`` - a version of scrapighub/splash
   Docker image.
 * ``splash_verbosity (default is "1")`` - Splash log verbosity, from 0 to 5.
 * ``max_timeout (default is "3600")`` - maximum allowed timeout.
