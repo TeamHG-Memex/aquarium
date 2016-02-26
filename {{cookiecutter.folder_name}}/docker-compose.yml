@@ -25,7 +25,7 @@ haproxy:
 
 splash{{i}}:
     image: scrapinghub/splash:{{ cookiecutter.splash_version }}
-    command: --max-timeout {{ max_timeout }} --disable-proxy --slots 10 --maxrss {{ maxrss }} --verbosity {{ verbosity }}
+    command: --max-timeout {{ max_timeout }} --slots 10 --maxrss {{ maxrss }} --verbosity {{ verbosity }}
     expose:
         - 8050
     mem_limit: {{ mem_limit }}
