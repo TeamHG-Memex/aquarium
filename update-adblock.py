@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
-import urllib2
+import requests
 
 
 FILTERS = {
@@ -33,13 +33,13 @@ def update(path):
     for idx, (name, url) in enumerate(FILTERS.items(), start=1):
         print("[%d/%d] [%s] downloading %s" % (idx, len(FILTERS), name, url))
         try:
-            data = urllib2.urlopen(url, timeout=10).read()
+            resp = requests.get(url, timeout=10)
         except Exception as e:
             print(e)
         else:
             fn = os.path.join(path, name+".txt")
             with open(fn, 'wb') as f:
-                f.write(data)
+                f.write(resp.content)
 
 
 if __name__ == '__main__':
