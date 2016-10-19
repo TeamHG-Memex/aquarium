@@ -2,6 +2,8 @@
     "folder_name": "aquarium",
     "num_splashes": 3,
     "splash_version": "2.2.1",
+    "auth_user": "user",
+    "auth_password": "userpass",
     "splash_verbosity": 1,
     "max_timeout": 3600,
     "maxrss_mb": 3000,

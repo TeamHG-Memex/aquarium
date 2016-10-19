@@ -48,6 +48,8 @@ When generating a config, cookiecutter will ask a bunch of questions.
   work best.
 * ``splash_version (default is "master")`` - a version of scrapighub/splash
   Docker image.
+* ``auth_user (default is "user")``, ``auth_password (default is "userpass")``
+  - HTTP Basic Auth credentials for Splash.
 * ``splash_verbosity (default is "1")`` - Splash log verbosity, from 0 to 5.
 * ``max_timeout (default is "3600")`` - maximum allowed timeout.
 * ``maxrss_mb (default is "3000")`` - a soft memory limit, in MB. Splash
@@ -61,9 +63,10 @@ When generating a config, cookiecutter will ask a bunch of questions.
   is enabled, all .onion links are opened using Tor. In addition to
   that, there is ``tor`` `Splash proxy profile`_ which you can use to render
   any page using Tor.
-* ``adblock (default is "1")`` - FIXME: this option is not working yet.
-   Enter 0 to disable AdBlock Plus `request filters`_. By default,
-   the following filters are available:
+* ``adblock (default is "1")`` - Enter 0 to disable AdBlock Plus
+   `request filters`_ (FIXME: this option is not working yet;
+   filters are always available). By default, the following filters
+   are available:
 
   * `easylist`: default set of EasyList_ filters for English;
   * `easyprivacy`: EasyPrivacy filters remove tracking scripts;
@@ -77,7 +80,7 @@ When generating a config, cookiecutter will ask a bunch of questions.
 .. _Tor: http://torproject.org
 .. _Splash proxy profile: http://splash.readthedocs.org/en/latest/api.html#proxy-profiles
 .. _request filters: http://splash.readthedocs.org/en/latest/api.html#request-filters
-.. _EasyList: https://easylist.adblockplus.org/en/
+.. _EasyList: https://easylist.to/
 
 Contributing
 ------------
