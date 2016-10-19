@@ -48,17 +48,11 @@ services:
 
     {% if tor %}
     tor:
-        image: jess/privoxy
-        expose:
-            - 8118
-        links:
-            - tordaemon
-        restart: always
-
-    tordaemon:
         image: jess/tor-proxy
+        expose:
+            - 9050
         logging:
-          driver: "none"
+            driver: "none"
         restart: always
 
     {% endif %}
