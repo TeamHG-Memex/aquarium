@@ -1,7 +1,7 @@
 {
     "folder_name": "aquarium",
     "num_splashes": 3,
-    "splash_version": "2.2.1",
+    "splash_version": "3.0",
     "auth_user": "user",
     "auth_password": "userpass",
     "splash_verbosity": 1,

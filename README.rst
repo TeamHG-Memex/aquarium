@@ -46,7 +46,7 @@ When generating a config, cookiecutter will ask a bunch of questions.
   To utilize full server capacity it makes sense to create slightly more Splash
   instances than CPU cores - e.g. on 2-core machine 3 instances often
   work best.
-* ``splash_version (default is "2.2.1")`` - a version of scrapighub/splash
+* ``splash_version (default is "3.0")`` - a version of scrapighub/splash
   Docker image.
 * ``auth_user (default is "user")``, ``auth_password (default is "userpass")``
   - HTTP Basic Auth credentials for Splash.
