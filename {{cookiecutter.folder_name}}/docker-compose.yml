@@ -1,4 +1,5 @@
 {% set num_splashes = cookiecutter.num_splashes|int %}
+{% set splash_slots = cookiecutter.splash_slots|int %}
 {% set max_timeout = cookiecutter.max_timeout|int %}
 {% set maxrss = cookiecutter.maxrss_mb | int %}
 {% set mem_limit = "%dm" | format(maxrss * 1.4) %}
@@ -28,7 +29,7 @@ services:
 
     splash{{i}}:
         image: scrapinghub/splash:{{ cookiecutter.splash_version }}
-        command: --max-timeout {{ max_timeout }} --slots 10 --maxrss {{ maxrss }} --verbosity {{ verbosity }}
+        command: --max-timeout {{ max_timeout }} --slots {{ splash_slots }} --maxrss {{ maxrss }} --verbosity {{ verbosity }}
         expose:
             - 8050
         mem_limit: {{ mem_limit }}

@@ -7,6 +7,7 @@
     "splash_verbosity": 1,
     "max_timeout": 3600,
     "maxrss_mb": 3000,
+    "splash_slots": 5,
     "stats_enabled": 1,
     "stats_auth": "admin:adminpass",
     "tor": 1,

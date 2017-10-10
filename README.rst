@@ -55,6 +55,8 @@ When generating a config, cookiecutter will ask a bunch of questions.
 * ``maxrss_mb (default is "3000")`` - a soft memory limit, in MB. Splash
   container will be restarted after some time if it starts to use more memory
   then this value.
+* ``splash_slots (default is 5)`` - a number of Splash slots to use, i.e.
+  how many render jobs to run in parallel in a single Splash process.
 * ``stats_enabled (default is "1")`` - whether to enable HAProxy stats.
   If stats are enabled visit http://<host>:8036 to see stats page.
 * ``stats_auth (default is "admin:adminpass")`` - HTTP Basic Auth credentials
