@@ -29,7 +29,7 @@ services:
 
     splash{{i}}:
         image: scrapinghub/splash:{{ cookiecutter.splash_version }}
-        command: --max-timeout {{ max_timeout }} --slots {{ splash_slots }} --maxrss {{ maxrss }} --verbosity {{ verbosity }}
+        command: --disable-private-mode --max-timeout {{ max_timeout }} --slots {{ splash_slots }} --maxrss {{ maxrss }} --verbosity {{ verbosity }}
         expose:
             - 8050
         mem_limit: {{ mem_limit }}
